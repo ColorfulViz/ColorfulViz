@@ -1,0 +1,45 @@
+@font-face{
+    font-family:'MFYueYuan_Noncommercial-Regular';/*使用:font-family: MFYueYuan_Noncommercial-Regular;*/
+    src:url("./font/造字工房悦圆（非商用）常规体.otf")
+}
+
+.header{
+    min-width: 960px;
+    height:49.929px;
+    background-color: #dbdbdb;
+    color:#4D4D4D;
+    margin: 0 auto;
+    display: flex;
+}
+
+.nav{
+    min-width: 960px;
+    display: flex;
+    height: 49.929px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.navList{
+    display: flex;
+    font-size: 12.75pt;
+    font-family: MFYueYuan_Noncommercial-Regular;
+}
+
+.navItem{
+    width: 127.374px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+}
+.navItem:focus{
+    outline: none;
+}
+.navItem.active{
+    color: white;
+    background-color: #999999;
+    border-bottom: 4px solid #45D8BC;
+}
+
+/* url("./font/Avenir-Light.otf"),url("./font/Avenir-Medium.otf"),url("./font/AvenirNext-Medium.ttf"),url("./font/Baskerville SemiBold.ttf"),url("./font/DroidSansChinese.ttf"),url("./font/fzlthk.ttf"),url("./font/FZXH1JW.TTF"),url("./font/方正兰亭中黑_GBK.TTF"),url("./font/锐字云字库细圆体GBK.ttf"), */
