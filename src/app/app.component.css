@@ -5,33 +5,51 @@
 
 .header{
     min-width: 960px;
-    height:49.929px;
+    height:71.019px;
     background-color: #dbdbdb;
     color:#4D4D4D;
-    margin: 0 auto;
-    display: flex;
+    /* margin: 0 auto; */
+    /* display: flex; */
 }
 
 .nav{
     min-width: 960px;
+    height: 71.019px;
     display: flex;
-    height: 49.929px;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
-    margin: 0 auto;
+}
+
+.navListLogo{
+    display: flex;
+    font-size: 18.14pt;
+    font-family: MFYueYuan_Noncommercial-Regular;
+    width: 340px;
+    padding-left: 40px;
+    /* margin: 40 0; */
+}
+
+.logo{
+    width: 258px;
+    height: 41px;
+    background-image: url('./pic/logo.png');
+    /* span是行块，是没有宽高的 */
+    /* background-size: 100% 100%; */
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .navList{
     display: flex;
-    font-size: 12.75pt;
+    font-size: 18.14pt;
     font-family: MFYueYuan_Noncommercial-Regular;
 }
 
 .navItem{
-    width: 127.374px;
-    height: 45px;
+    width: 90.589px;
+    height: 63.019px;
     text-align: center;
-    line-height: 45px;
+    line-height: 71.019px;
 }
 .navItem:focus{
     outline: none;
@@ -39,7 +57,31 @@
 .navItem.active{
     color: white;
     background-color: #999999;
-    border-bottom: 4px solid #45D8BC;
+    border-bottom: 6.5pt solid #45D8BC;
+}
+
+.navItem4{
+    width: 115px;
+    height: 63.019px;
+    text-align: center;
+    line-height: 71.019px;
+}
+.navItem4:focus{
+    outline: none;
+}
+.navItem4.active{
+    color: white;
+    background-color: #999999;
+    border-bottom: 6.5pt solid #45D8BC;
 }
 
 /* url("./font/Avenir-Light.otf"),url("./font/Avenir-Medium.otf"),url("./font/AvenirNext-Medium.ttf"),url("./font/Baskerville SemiBold.ttf"),url("./font/DroidSansChinese.ttf"),url("./font/fzlthk.ttf"),url("./font/FZXH1JW.TTF"),url("./font/方正兰亭中黑_GBK.TTF"),url("./font/锐字云字库细圆体GBK.ttf"), */
+/* .logo{
+    height: 71.019px;
+    width: 620px;
+} */
+
+/* .logoImg{
+    height:41px;
+    width: 258px;
+} */
