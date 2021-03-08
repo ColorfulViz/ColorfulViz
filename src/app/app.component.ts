@@ -9,7 +9,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'ColorfulViz';
   activeDom = 1;
-  addActive(index){
+  
+  addActive(index:any){
     this.activeDom = index;
   }
 }

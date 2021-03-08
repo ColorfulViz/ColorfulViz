@@ -1,1 +1,64 @@
 /**/
+
+.content{
+    width:100%;
+    height:100%;
+    margin-top: 100px;
+    margin-left:100px;
+}
+
+.left{
+    position: fixed;
+    width:100px;
+    height: 800px;
+    border-right-style: solid;
+    border-right-width: 4px;
+    border-right-color: #45D8BC;
+    text-align: center;
+    align-items: center;
+}
+
+
+
+.right{
+    position: fixed;
+    left: 240px;
+    width: 80%;
+    height: 800px;
+    border: solid;
+    overflow-y: scroll;
+}
+
+.content .left button{
+    width: 100px;
+    height:50px;
+    text-align: center;
+    line-height: 50px;
+    border: none;
+    background-color: white;
+}
+
+
+.linechart{
+    height:400px;
+    background-color:transparent;
+}
+.histogram{
+    height:400px;
+    background-color: red;
+}
+.piechart{
+    height:400px;
+    background-color: yellow;
+}
+.scatterdiagram{
+
+    height:800px;
+    background-color: pink;
+}
+
+.active{
+    background-color: #45D8BC !important;
+    border:0px;
+    color:white;
+}

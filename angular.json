@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "ColorfulViz"
+  "defaultProject": "ColorfulViz",
+  "cli": {
+    "analytics": "6246dd75-b618-429f-9b3c-71f3011d5659"
+  }
 }

@@ -1,1 +1,16 @@
-<p>template works!</p>
+<div class = 'content'>
+    <div class = 'left' >
+        <button b = '1' (click)="onClick(1)">折线图</button>
+        <button b = '2' (click)="onClick(2)">直方图</button>
+        <button b = '3' (click)="onClick(3)">饼图</button>
+        <button b = '4' (click)="onClick(4)">散点图</button>
+    </div>
+
+    <body class = 'right' (scroll)="doChange()">
+        <div class="linechart" a="1" >
+        </div>
+        <div class="histogram" a="2"></div>
+        <div class="piechart" a="3"></div>
+        <div class="scatterdiagram" a="4"></div>
+    </body>
+</div>
