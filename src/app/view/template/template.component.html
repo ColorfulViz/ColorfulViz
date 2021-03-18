@@ -8,9 +8,45 @@
 
     <body class = 'right' (scroll)="doChange()">
         <div class="linechart" a="1" >
-            <div [routerLink]="[ '/BasicArea' ]" routerLinkActive="router-link-active">Basic Area Chart</div>
+            <div [routerLink]="[ '/BasicLine' ]" routerLinkActive="active" class = "basicline">
+                Basic Line Chart
+                <div class = "blpic"></div>
+            </div>
+            <div [routerLink]="[ '/BasicArea' ]" routerLinkActive="active" class = "basicarea">
+                Basic Area Chart  
+                <div class = "bapic"></div> 
+            </div>
+            <div [routerLink]="[ '/StackedLine' ]" routerLinkActive="active" class = "stackedline">
+                Stacked Line Chart
+                <div class = "slpic"></div>
+            </div>
+            <div [routerLink]="[ '/StackedArea' ]" routerLinkActive="active" class = "stackedarea">
+                Stacked Area Chart
+                <div class = "sapic"></div>
+            </div>
+            <div [routerLink]="[ '/Smoothedline' ]" routerLinkActive="active" class = "smoothedline">
+                Smoothed Line Chart
+                <div class = "smpic"></div>
+            </div>
         </div>
-        <div class="histogram" a="2"></div>
+        <div class="barchart" a="2">
+            <div [routerLink]="[ '/BarSimple' ]" routerLinkActive="active" class = "barsimple">
+                Bar Simple
+                <div class = "bspic"></div>
+            </div>
+            <div [routerLink]="[ '/Axisalign' ]" routerLinkActive="active" class = "axisalign">
+                Axis Align
+                <div class = "aapic"></div>
+            </div>
+            <div [routerLink]="[ '/BarArea' ]" routerLinkActive="active" class = "bararea">
+                Bar Area
+                <div class = "bareapic"></div>
+            </div>
+            <div [routerLink]="[ '/SeriesLayout' ]" routerLinkActive="active" class = "serieslayout">
+                Bar Area
+                <div class = "seriespic"></div>
+            </div>
+        </div>
         <div class="piechart" a="3"></div>
         <div class="scatterdiagram" a="4"></div>
     </body>

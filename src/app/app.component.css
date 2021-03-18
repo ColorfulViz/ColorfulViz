@@ -66,14 +66,30 @@
     text-align: center;
     line-height: 71.019px;
 }
+
 .navItem4:focus{
     outline: none;
 }
 .navItem4.active{
     color: white;
     background-color: #999999;
-    border-bottom: 6.5pt solid #45D8BC;
+    border-bottom: 6.5pt solid #ffe861;
+} 
+
+/* .navItem4{
+    width: 115px;
+    height: 63.019px;
+    text-align: center;
+    line-height: 71.019px;
 }
+.navItem4:focus{
+    outline: none;
+}
+.navItem4.active{
+    color: white;
+    background-color: #999999;
+    border-bottom: 6.5pt solid #ffe861;
+} */
 
 /* url("./font/Avenir-Light.otf"),url("./font/Avenir-Medium.otf"),url("./font/AvenirNext-Medium.ttf"),url("./font/Baskerville SemiBold.ttf"),url("./font/DroidSansChinese.ttf"),url("./font/fzlthk.ttf"),url("./font/FZXH1JW.TTF"),url("./font/方正兰亭中黑_GBK.TTF"),url("./font/锐字云字库细圆体GBK.ttf"), */
 /* .logo{

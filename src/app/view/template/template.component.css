@@ -24,9 +24,9 @@
     position: fixed;
     left: 240px;
     width: 80%;
-    height: 800px;
+    height: 80%;
     border: solid;
-    overflow-y: scroll;
+    overflow-y: scroll; 
 }
 
 .content .left button{
@@ -41,12 +41,203 @@
 
 .linechart{
     height:400px;
-    background-color:transparent;
+    width: 1900px;
+    background-color: transparent;
+    overflow-x: scroll;
 }
-.histogram{
+
+.linechart .basicline{
+    padding:10px;
+    margin-left:100px;
+    margin-top: 50px;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    font-size: 18.14pt;
+}
+
+.linechart .basicline .blpic{
+    background-image:  url(../../pic/ChartTemplate/1-BasicLineChart.png) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 200px;
+}
+
+.basicline .active{
+    background-color: grey !important;
+    border-left: 10px solid #45D8BC;
+}
+
+.linechart .basicarea{
+    padding: 10px;
+    position: absolute;
+    top: 50px;
+    left: 450px;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    font-size: 18.14pt;
+}
+
+.linechart .basicarea .bapic{
+    background-image:  url(../../pic/ChartTemplate/2-BasicAreaChart.png) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 200px;
+}
+
+.linechart .stackedline{
+    padding: 10px;
+    position: absolute;
+    top: 50px;
+    left: 800px;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    font-size: 18.14pt;
+}
+
+.linechart .stackedline .slpic{
+    background-image:  url(../../pic/ChartTemplate/5-StackedLineChart.png) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 200px;
+}
+
+.linechart .stackedarea{
+    padding: 10px;
+    position: absolute;
+    top: 50px;
+    left: 1150px;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    font-size: 18.14pt;
+}
+
+.linechart .stackedarea .sapic{
+    background-image:  url(../../pic/ChartTemplate/4-StackedareaChart.png) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 200px;
+}
+
+.linechart .smoothedline{
+    padding: 10px;
+    position: absolute;
+    top: 50px;
+    left: 1500px;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    font-size: 18.14pt;
+}
+
+.linechart .smoothedline .smpic{
+    background-image:  url(../../pic/ChartTemplate/3-SmoothedLineChart.png) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 200px;
+}
+
+
+
+.barchart{
     height:400px;
-    background-color: red;
+    width: 1900px;
+    background-color: transparent;
+    overflow-x: scroll;
 }
+
+.barchart .barsimple{
+    padding:10px;
+    margin-left:100px;
+    margin-top: 50px;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    font-size: 18.14pt;
+}
+
+.barchart .barsimple .bspic{
+    background-image:  url(../../pic/ChartTemplate/6-BarSimple.png) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 200px;
+}
+
+.barchart .axisalign{
+    padding: 10px;
+    position: absolute;
+    top: 450px;
+    left: 450px;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    font-size: 18.14pt;
+}
+
+.barchart .axisalign .aapic{
+    background-image:  url(../../pic/ChartTemplate/7-坐标轴刻度与标签对齐.png) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 200px;
+}
+
+.barchart .bararea{
+    padding: 10px;
+    position: absolute;
+    top: 450px;
+    left: 800px;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    font-size: 18.14pt;
+}
+
+.barchart .bararea .bareapic{
+    background-image:  url(../../pic/ChartTemplate/8-堆叠条形图.png) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 200px;
+}
+
+.barchart .serieslayout{
+    padding: 10px;
+    position: absolute;
+    top: 450px;
+    left: 1150px;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    font-size: 18.14pt;
+}
+
+.barchart .serieslayout .seriespic{
+    background-image:  url(../../pic/ChartTemplate/9-SimpleExampleofDataset.png) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 200px;
+}
+
 .piechart{
     height:400px;
     background-color: yellow;

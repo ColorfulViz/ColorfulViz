@@ -13,6 +13,9 @@ import { BarsimpleComponent } from './view/chart/barsimple/barsimple.component';
 import { BarareaComponent } from './view/chart/bararea/bararea.component';
 import { StackedareaComponent } from './view/chart/stackedarea/stackedarea.component';
 import { StackedlineComponent } from './view/chart/stackedline/stackedline.component';
+import { SmoothedlineComponent } from './view/chart/smoothedline/smoothedline.component';
+import { AxisalignComponent } from './view/chart/axisalign/axisalign.component';
+import { SerieslayoutComponent } from './view/chart/serieslayout/serieslayout.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,10 @@ import { StackedlineComponent } from './view/chart/stackedline/stackedline.compo
     BarsimpleComponent,
     BarareaComponent,
     StackedareaComponent,
-    StackedlineComponent
+    StackedlineComponent,
+    SmoothedlineComponent,
+    AxisalignComponent,
+    SerieslayoutComponent
   ],
   imports: [
     BrowserModule,

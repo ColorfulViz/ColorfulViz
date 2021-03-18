@@ -10,7 +10,9 @@ import {StackedareaComponent} from './view/chart/stackedarea/stackedarea.compone
 import {StackedlineComponent} from './view/chart/stackedline/stackedline.component';
 import {BarsimpleComponent} from './view/chart/barsimple/barsimple.component';
 import {BarareaComponent} from './view/chart/bararea/bararea.component';
-
+import {SmoothedlineComponent} from './view/chart/smoothedline/smoothedline.component';
+import {AxisalignComponent} from './view/chart/axisalign/axisalign.component';
+import {SerieslayoutComponent} from './view/chart/serieslayout/serieslayout.component';
 
 const routes: Routes = [
   {
@@ -50,12 +52,20 @@ const routes: Routes = [
     component:BarsimpleComponent
   },
   {
-    path:'BarSimple',
-    component:BarsimpleComponent
-  },
-  {
     path:'BarArea',
     component:BarareaComponent
+  },
+  {
+    path:'SmoothedLine',
+    component:SmoothedlineComponent
+  },
+  {
+    path:'Axisalign',
+    component:AxisalignComponent
+  },
+  {
+    path:'Serieslayout',
+    component:SerieslayoutComponent
   },
   {
     path:'**',
