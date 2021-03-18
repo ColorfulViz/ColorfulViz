@@ -7,6 +7,12 @@ import { IndexComponent } from './view/index/index.component';
 import { TemplateComponent } from './view/template/template.component';
 import { LayoutComponent } from './view/layout/layout.component';
 import { MyChartComponent } from './view/my-chart/my-chart.component';
+import { BasiclineComponent } from './view/chart/basicline/basicline.component';
+import { BasicareaComponent } from './view/chart/basicarea/basicarea.component';
+import { BarsimpleComponent } from './view/chart/barsimple/barsimple.component';
+import { BarareaComponent } from './view/chart/bararea/bararea.component';
+import { StackedareaComponent } from './view/chart/stackedarea/stackedarea.component';
+import { StackedlineComponent } from './view/chart/stackedline/stackedline.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +20,13 @@ import { MyChartComponent } from './view/my-chart/my-chart.component';
     IndexComponent,
     TemplateComponent,
     LayoutComponent,
-    MyChartComponent
+    MyChartComponent,
+    BasiclineComponent,
+    BasicareaComponent,
+    BarsimpleComponent,
+    BarareaComponent,
+    StackedareaComponent,
+    StackedlineComponent
   ],
   imports: [
     BrowserModule,
