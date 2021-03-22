@@ -1,1 +1,20 @@
-<p>smoothedline works!</p>
+<div class="container">
+    <div class="left">
+        <div class="input">数据输入</div>
+        <button class="draw_chart" (click)="draw_Chart()">运行</button>
+        <div class="select_color">颜色选择</div>
+        <div class="file_container">
+            <input type = "file" accept="image/*" class="inputbutton">
+        </div>
+        <label class="color_s">
+            <input class="mui-switch_color" [(ngModel)]="color_select" type="checkbox" hidden>
+            <div class="mui-switch-text_color"><span>Default</span><span>Customized</span></div>
+        </label>
+    </div>
+    <div class="right">
+        <label class="chart_s">
+            <input class="mui-switch_chart" [(ngModel)]="chart_select" type="checkbox" hidden>
+            <div class="mui-switch-text_chart"><span>ECharts</span><span>D3</span></div>
+        </label>
+    </div>
+</div>

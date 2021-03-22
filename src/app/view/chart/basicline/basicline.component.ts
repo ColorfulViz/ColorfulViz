@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BasiclineComponent implements OnInit {
 
+  public color_select:boolean = false;  //判断颜色的设置方式
+  public chart_select:boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
@@ -16,7 +19,5 @@ export class BasiclineComponent implements OnInit {
     alert("可以使用！")
   }
 
-  switchs(dom:any){
-    console.log(dom.checked);
-  }
+  
 }

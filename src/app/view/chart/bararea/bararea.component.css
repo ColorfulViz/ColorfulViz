@@ -1,0 +1,180 @@
+@font-face{
+    font-family: '锐字云字库';
+    src:url("../../../font/锐字云字库细圆体GBK.ttf");
+}
+
+@font-face{
+    font-family:'MFYueYuan_Noncommercial-Regular';/*使用:font-family: MFYueYuan_Noncommercial-Regular;*/
+    src:url("../../../font/造字工房悦圆（非商用）常规体.otf")
+}
+
+.container{
+    height: 960px;
+    min-width: 960px;
+}
+
+.container .left{
+    position:relative;
+    width: 50%;
+    height:100%;
+    background-color:transparent;
+}
+
+.container .right{
+    position: relative;
+    left:50%;
+    top:-100%;
+    width: 50%;
+    height:100%;
+    background-color:rgb(242,242,242);
+}
+
+.container .left .input{
+    position:absolute;
+    left:50px;
+    top: 65.4px;
+    font-size: 26pt;
+    font-family: 锐字云字库;
+}
+
+.container .left .select_color{
+    position:absolute;
+    left:50px;
+    top:333.15px;
+    font-size: 26pt;
+    font-family: 锐字云字库;
+}
+
+.container .left .draw_chart{
+    position: absolute;
+    left:80%;
+    top: 279.59px;
+    width: 116.98px;
+    height: 39.76px;
+    background-color: #45D8BC;
+    border:none;
+    font-size: 19.56px;
+    font-family: MFYueYuan_Noncommercial-Regular;
+    color: white;
+    letter-spacing: 5px;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.container .left .draw_chart:hover{
+    transform: scale(1.3);
+}
+
+.color_s {
+    position: absolute;
+    display: block;
+    top:581.11px;
+    left:50px;
+    width: 200px;
+    height: 40px;
+    background-color: #45D8BC;
+    border: #45D8BC 1px solid;
+}
+
+.mui-switch_color + .mui-switch-text_color {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.mui-switch-text_color:before {
+    content: 'Default';
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#45D8BC;
+    transition: left 0.2s;
+    background-color: #fff; 
+}
+
+.mui-switch_color:checked + .mui-switch-text_color:before {
+    content: 'Customized';
+    left: 50%; 
+}
+
+.mui-switch_color + .mui-switch-text_color span {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    color: #fff;
+}
+
+.right .chart_s {
+    position: absolute;
+    display: block;
+    top:26.15px;
+    width: 200px;
+    height: 40px;
+    background-color: #45D8BC;
+    border: #45D8BC 1px solid;
+}
+
+.mui-switch_chart + .mui-switch-text_chart {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.mui-switch-text_chart:before {
+    content: 'EChart';
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#45D8BC;
+    transition: left 0.2s;
+    background-color: #fff; 
+}
+
+.mui-switch_chart:checked + .mui-switch-text_chart:before {
+    content: 'D3';
+    left: 50%; 
+}
+
+.mui-switch_chart + .mui-switch-text_chart span {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    color: #fff;
+}
+
+.file_container{
+    position: absolute;
+    top: 480px;
+    left:50px;
+    width: 100px;
+    height:50px;
+    background: url("../../../pic/ChartTemplate/2-BasicAreaChart.png") center center no-repeat !important;
+    background-size: 100%;
+    background-color: transparent;
+}
+
+.file_container .inputbutton{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
