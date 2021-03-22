@@ -12,4 +12,11 @@ export class BasiclineComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  draw_Chart(){
+    alert("可以使用！")
+  }
+
+  switchs(dom:any){
+    console.log(dom.checked);
+  }
 }

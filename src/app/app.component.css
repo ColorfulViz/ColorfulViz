@@ -74,7 +74,29 @@
     color: white;
     background-color: #999999;
     border-bottom: 6.5pt solid #ffe861;
-} 
+}
+
+div.back {
+    -moz-transition-duration:.4s;
+    -o-transition-duration:.4s;
+    -webkit-transition-duration:.4s;
+    background-color:rgba(28, 29, 25, 1);
+    position: fixed;
+    right: 80px;
+    left: 240px;
+    height:0;
+    width:1400px;
+}
+
+.navItem4:hover {
+    color: white;
+    background-color: #999999;
+    border-bottom: 6.5pt solid #ffe861;
+}
+
+.navItem4:hover div.back{
+    height:100px;
+}
 
 /* .navItem4{
     width: 115px;

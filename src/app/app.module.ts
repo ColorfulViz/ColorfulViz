@@ -16,6 +16,7 @@ import { StackedlineComponent } from './view/chart/stackedline/stackedline.compo
 import { SmoothedlineComponent } from './view/chart/smoothedline/smoothedline.component';
 import { AxisalignComponent } from './view/chart/axisalign/axisalign.component';
 import { SerieslayoutComponent } from './view/chart/serieslayout/serieslayout.component';
+import { HeadComponent } from './view/head/head.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { SerieslayoutComponent } from './view/chart/serieslayout/serieslayout.co
     StackedlineComponent,
     SmoothedlineComponent,
     AxisalignComponent,
-    SerieslayoutComponent
+    SerieslayoutComponent,
+    HeadComponent
   ],
   imports: [
     BrowserModule,

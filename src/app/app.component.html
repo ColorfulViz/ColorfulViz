@@ -1,15 +1,25 @@
 <header class='header'>
-  <div class="nav">
-    <div class="navListLogo">
-      <span class="logo"></span>
-    </div>
-    <div class="navList">
-      <div class="navItem" [class]="{active: activeDom == 1}" (click)="addActive(1)" [routerLink]="[ '/' ]" routerLinkActive="router-link-active">首页</div>
-      <div class="navItem" [class]="{active: activeDom == 2}" (click)="addActive(2)" [routerLink]="[ '/template' ]" routerLinkActive="router-link-active">模板</div>
-      <div class="navItem" [class]="{active: activeDom == 3}" (click)="addActive(3)" [routerLink]="[ '/layout' ]" routerLinkActive="router-link-active">布局</div>
-      <div class="navItem4" [class]="{active: activeDom == 4}" (click)="addActive(4)" routerLinkActive="active">我的图表</div> 
+    <div class="nav">
+      <div class="navListLogo">
+        <span class="logo"></span>
+      </div>
+      <div class="nav0">
+        <div class="navList">
+          <div class="navItem" [class]="{active: activeDom == 1}" (click)="addActive(1)" [routerLink]="[ '/' ]"
+            routerLinkActive="router-link-active">首页</div>
+          <div class="navItem" [class]="{active: activeDom == 2}" (click)="addActive(2)" [routerLink]="[ '/template' ]"
+            routerLinkActive="router-link-active">模板</div>
+          <div class="navItem" [class]="{active: activeDom == 3}" (click)="addActive(3)" [routerLink]="[ '/layout' ]"
+            routerLinkActive="router-link-active">布局</div>
+          <div class="navItem4" [class]="{active: activeDom == 4}" (click)="addActive(4)" routerLinkActive="active">
+            我的图表
+            <div class = "back" ></div>
+          </div>
+          
+        </div>
+        
+      </div>
       <!-- [class]="{active: activeDom == 4}" (click)="addActive(4)" -->
     </div>
-  </div>
-</header>
-<router-outlet></router-outlet>
+  </header>
+  <router-outlet></router-outlet>

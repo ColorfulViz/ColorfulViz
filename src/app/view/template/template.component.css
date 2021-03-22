@@ -1,4 +1,8 @@
 /**/
+@font-face{
+    font-family: "CloudYuanXiGBK";
+    src:url(../../font/锐字云字库细圆体GBK.ttf)
+}
 
 .content{
     width:100%;
@@ -9,7 +13,7 @@
 
 .left{
     position: fixed;
-    width:100px;
+    width:103px;
     height: 800px;
     border-right-style: solid;
     border-right-width: 4px;
@@ -25,16 +29,18 @@
     left: 240px;
     width: 80%;
     height: 80%;
-    border: solid;
+    
     overflow-y: scroll; 
 }
 
 .content .left button{
-    width: 100px;
-    height:50px;
+    width: 102.596px;
+    height:38.934px;
     text-align: center;
-    line-height: 50px;
+    line-height: 38.934px;
     border: none;
+    font-size: 21.34px;
+    font-family: CloudYuanXiGBK;
     background-color: white;
 }
 
@@ -240,12 +246,12 @@
 
 .piechart{
     height:400px;
-    background-color: yellow;
+    background-color: white;
 }
 .scatterdiagram{
 
     height:800px;
-    background-color: pink;
+    background-color: white;
 }
 
 .active{
