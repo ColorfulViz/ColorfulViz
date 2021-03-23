@@ -83,6 +83,7 @@
     display: flex;
     align-items: center;
     position: relative;
+    font-family: 锐字云字库;
 }
 
 .mui-switch-text_color:before {
@@ -91,6 +92,7 @@
     height: 100%;
     top: 0;
     left: 0;
+    font-family: 锐字云字库;
     position: absolute;
     display: flex;
     align-items: center;
@@ -102,6 +104,7 @@
 
 .mui-switch_color:checked + .mui-switch-text_color:before {
     content: 'Customized';
+    font-family: 锐字云字库;
     left: 50%; 
 }
 
@@ -110,6 +113,7 @@
     width: 50%;
     text-align: center;
     color: #fff;
+    font-family: 锐字云字库;
 }
 
 .right .chart_s {
@@ -118,6 +122,7 @@
     top:26.15px;
     width: 200px;
     height: 40px;
+    font-family: 锐字云字库;
     background-color: #45D8BC;
     border: #45D8BC 1px solid;
 }
@@ -129,10 +134,12 @@
     display: flex;
     align-items: center;
     position: relative;
+    font-family: 锐字云字库;
 }
 
 .mui-switch-text_chart:before {
     content: 'EChart';
+    font-family: 锐字云字库;
     width: 50%;
     height: 100%;
     top: 0;
@@ -148,6 +155,7 @@
 
 .mui-switch_chart:checked + .mui-switch-text_chart:before {
     content: 'D3';
+    font-family: 锐字云字库;
     left: 50%; 
 }
 
@@ -156,18 +164,60 @@
     width: 50%;
     text-align: center;
     color: #fff;
+    font-family: 锐字云字库;
 }
 
 .file_container{
     position: absolute;
-    top: 480px;
+    top: 401.6px;
     left:50px;
-    width: 100px;
-    height:50px;
-    background: url("../../../pic/ChartTemplate/2-BasicAreaChart.png") center center no-repeat !important;
-    background-size: 100%;
-    background-color: transparent;
+    width: 320.67px;
+    height:165.2px;
 }
+
+.file_container .pic_border{
+    width: 100%;
+    height: 100%;
+    background-image: url("../../../pic/上传文件框.png") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-size: 100%;
+}
+
+.file_container .pic_border #img3 {
+    max-height: 90%;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 10px 10px;
+    background-size: cover;
+    border-radius: 18px;
+    display: none;
+}
+
+.file_container .add_signal{
+    position:absolute;
+    top: 46.7px;
+    left: 142.786px;
+    width: 35.105px;
+    height:35.105px;
+    background-image: url("../../../pic/上传文件的加号.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.file_container .word_signal{
+    position:absolute;
+    top:103.21px;
+    left:116.362px;
+    width: 87.94px;
+    height:21.66px;
+    font-family: 锐字云字库;
+    font-size: 20px;
+    color:#45D8BC;
+}
+
 
 .file_container .inputbutton{
     position: absolute;

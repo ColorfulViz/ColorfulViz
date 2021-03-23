@@ -3,8 +3,13 @@
         <div class="input">数据输入</div>
         <button class="draw_chart" (click)="draw_Chart()">运行</button>
         <div class="select_color">颜色选择</div>
-        <div class="file_container">
-            <input type = "file" accept="image/*" class="inputbutton">
+        <div class="file_container" *ngIf="color_select">
+            <div class = "pic_border">
+                <img src="#" id="img3" />
+            </div>
+            <div class = "add_signal"></div>
+            <span class = "word_signal">上传图片</span>
+            <input type = "file" id = "file" accept="image/*" class="inputbutton" (change)="change_Pic($event)">
         </div>
         <label class="color_s">
             <input class="mui-switch_color" [(ngModel)]="color_select" type="checkbox" hidden>
