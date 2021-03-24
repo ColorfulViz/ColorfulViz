@@ -1,1 +1,30 @@
-/**/
+.texture{
+    align-content: center;
+    margin: 0;
+    padding:0;
+}
+
+.background{
+    display: flex;
+    min-width: 960px;
+    height:416px;
+    margin-top:0px;
+    padding-top: 0px;
+    background-image: url('../../pic/background.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.info{
+    min-width: 960px;
+    height:150px;
+    margin-top:40px;
+    margin-bottom: 40px;
+    padding-top: 0px;
+    margin-left: 60px;
+    margin-right:40px;
+    background-image: url('../../pic/info.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
