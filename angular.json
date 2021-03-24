@@ -93,7 +93,10 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/index.js",
+              "src/assets/js/kmeans.js"
+            ]
           }
         },
         "lint": {
