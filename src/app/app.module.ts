@@ -18,6 +18,7 @@ import { SmoothedlineComponent } from './view/chart/smoothedline/smoothedline.co
 import { AxisalignComponent } from './view/chart/axisalign/axisalign.component';
 import { SerieslayoutComponent } from './view/chart/serieslayout/serieslayout.component';
 import { HeadComponent } from './view/head/head.component';
+import { NgxEchartsModule } from 'ngx-echarts';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { HeadComponent } from './view/head/head.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    NgxEchartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -94,8 +94,7 @@
               "src/styles.css"
             ],
             "scripts": [
-              "src/assets/js/index.js",
-              "src/assets/js/kmeans.js"
+              "src/assets/js/index.js"
             ]
           }
         },

@@ -303,6 +303,7 @@ function getTopColors(k, imgData) {
             main.push({
                 name: [r0, r1, r2],
                 value: 1000
+                
             });
         }
 
