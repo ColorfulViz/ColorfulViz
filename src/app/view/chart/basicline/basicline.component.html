@@ -1,16 +1,44 @@
 <div class="container">
     <div class="left">
         <div class="input">数据输入</div>
+        <div class="file_please">
+            <div class="file_border">
+                <div id="img_f" class = "img_file"></div>
+            </div>
+            <div class="add_signal_f"></div>
+            <div class="word_signal_f">上传文件</div>
+            <input class="updatefile" type="file" accept=".csv" (change)="handleFileSelect($event)">
+            <div class="input_border">
+                <div class = "xAxis">X轴:<input type="text" [(ngModel)]="xAxisName"></div>
+                <br>
+                <div class = "yAxis">Y轴:<input type="text" [(ngModel)]="yAxisName"></div>
+                <button (click)="submit()" class="button button--winona button--border-thin button--round-s" >确认</button>
+            </div>
+        </div>
         <button class="draw_chart" (click)="draw_Chart()">运行</button>
         <div class="select_color">颜色选择</div>
-        <div class="file_container" *ngIf="color_select">
-            <div class = "pic_border">
-                <img src="#" id="img3" />
+        <ng-template #elseBlock>
+            <div class="color_button">
+                <button class="btn1" a="1" (click)="setColor($event)" title="选定颜色后点击运行"></button>
+                <button class="btn2" a="2" (click)="setColor($event)"></button>
+                <button class="btn3" a="3" (click)="setColor($event)"></button>
+                <button class="btn4" a="4" (click)="setColor($event)"></button>
+                <button class="btn5" a="5" (click)="setColor($event)"></button>
+                <button class="btn6" a="6" (click)="setColor($event)"></button>
+                <button class="btn7" a="7" (click)="setColor($event)"></button>
+                <button class="btn8" a="8" (click)="setColor($event)"></button>
+                <button class="btn9" a="9" (click)="setColor($event)"></button>
+                <button class="btn10" a="10" (click)="setColor($event)"></button>
             </div>
-            <div class = "add_signal"></div>
-            <span class = "word_signal">上传图片</span>
-            <canvas id="myCanvas" width = "300" height="300"></canvas>
-            <input type = "file" id = "file" accept="image/*" class="inputbutton" (change)="change_Pic($event)">
+        </ng-template>
+        <div class="file_container" *ngIf="color_select;else elseBlock">
+            <div class="pic_border">
+                <img src="#" id="img3" class = "img_pic"/>
+            </div>
+            <div class="add_signal"></div>
+            <span class="word_signal">上传图片</span>
+            <div class="canvas_container"><canvas id="myCanvas" width="300" height="300"></canvas></div>
+            <input type="file" id="file" accept="image/*" class="inputbutton" (change)="change_Pic($event)">
         </div>
         <label class="color_s">
             <input class="mui-switch_color" [(ngModel)]="color_select" type="checkbox" hidden>
@@ -22,5 +50,6 @@
             <input class="mui-switch_chart" [(ngModel)]="chart_select" type="checkbox" hidden>
             <div class="mui-switch-text_chart"><span>ECharts</span><span>D3</span></div>
         </label>
+        <div id='main' class="linechart"></div>
     </div>
 </div>

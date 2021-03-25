@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule }   from '@angular/forms';
+import { NgxEchartsModule } from 'ngx-echarts';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,7 +19,8 @@ import { SmoothedlineComponent } from './view/chart/smoothedline/smoothedline.co
 import { AxisalignComponent } from './view/chart/axisalign/axisalign.component';
 import { SerieslayoutComponent } from './view/chart/serieslayout/serieslayout.component';
 import { HeadComponent } from './view/head/head.component';
-import { NgxEchartsModule } from 'ngx-echarts';
+
+
 
 @NgModule({
   declarations: [
@@ -42,7 +44,7 @@ import { NgxEchartsModule } from 'ngx-echarts';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    NgxEchartsModule
+    NgxEchartsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

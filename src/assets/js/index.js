@@ -133,6 +133,8 @@ Kmeans.prototype.distance = function (v1, v2) {
     return Math.sqrt(total)
 }
 
+
+
 var index = {
 
     changepic() {
@@ -140,10 +142,9 @@ var index = {
         handle(f);
     },
     
-    handle(pho) {
+    handle(pho,getColors) {
         var canvas_obj = document.getElementById("myCanvas");
         var ctx = canvas_obj.getContext("2d");
-    
         var img = new Image();
         img.src = getObjectURL(pho);
     
@@ -152,7 +153,7 @@ var index = {
             var imgData_obj = ctx.getImageData(0, 0, canvas_obj.width, canvas_obj.height);
             var imgData = imgData_obj.data;
     
-            getTopColors(10, imgData)
+            getColors(getTopColors(10, imgData));
         };
     },
     
@@ -244,6 +245,7 @@ function sortNumber(a, b) {
 
 function getTopColors(k, imgData) {
 
+    var color = new Array();
     var pixelArray = new Array();
     for (var i = 0, offset, r, g, b, a; i < imgData.length; i = i + 4) {
         offset = i * 4;
@@ -289,7 +291,7 @@ function getTopColors(k, imgData) {
 
                 main.push({
                     name: [t[0], t[1], t[2]],
-                    value: list.length
+                    //value: list.length
                 });
             });
         } catch (e) {
@@ -302,7 +304,7 @@ function getTopColors(k, imgData) {
             var r2 = main[0].name[2] + Math.round(Math.random() * 20);
             main.push({
                 name: [r0, r1, r2],
-                value: 1000
+                //value: 1000
                 
             });
         }
@@ -311,13 +313,12 @@ function getTopColors(k, imgData) {
             var t = l.name;
             l.name = `rgb(${t[0]},${t[1]},${t[2]})`;
         });
-
         console.log(main);
-
+        
         // drawPie(main);
         // drawLine(main);
 
-
+        color = main;
     })
-
+    return color;
 }
