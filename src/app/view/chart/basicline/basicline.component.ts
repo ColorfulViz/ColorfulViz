@@ -40,6 +40,7 @@ export class BasiclineComponent implements OnInit {
     if(a != undefined)
       index = parseInt(a);
     BasiclineComponent.chart_color = this.default_colors[index - 1];
+    alert("颜色选择成功！")
   }
 
   //画图所用函数
@@ -146,9 +147,12 @@ submit(){
     alert("您输入的x轴不存在！")
     this.xAxisName = "";
   }
-  if(arr.indexOf(this.yAxisName) == -1){
+  else if(arr.indexOf(this.yAxisName) == -1){
     alert("您输入的y轴不存在！")
     this.yAxisName = "";
+  }
+  else{
+    alert("设置成功！");
   }
 }
 
@@ -163,6 +167,7 @@ ConvertJSONtoArray(){
     //console.log(this.myDataset[i]);
     this.myDataset[i] = this.myDataset[i].split(/,/);
   }
+  this.myDataset[0][0] = this.myDataset[0][0].substring(1,this.myDataset[0][0].length);
   //console.log(this.myDataset);
 }  
 

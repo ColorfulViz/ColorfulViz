@@ -9,7 +9,7 @@
 }
 
 .container{
-    height: 960px;
+    height: 800px;
     min-width: 960px;
 }
 
@@ -36,6 +36,164 @@
     font-size: 26pt;
     font-family: 锐字云字库;
 }
+
+.container .left .file_please{
+    position: absolute;
+    left:50px;
+    top: 100px;
+    width: 320.67px;
+    height:165.2px;
+}
+
+.container .left .file_please .updatefile{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.left .file_please .file_border #img_f{
+    position: absolute;
+    height: 120px;
+    width: 270px;
+    top:10px;
+    padding: 10px 10px;
+    background-size: contain;
+    border-radius: 18px;
+    display: none;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-image: url("../../../pic/CSV_logo.png");
+}
+
+.left .file_please .add_signal_f{
+    position:absolute;
+    top: 46.7px;
+    left: 142.786px;
+    width: 35.105px;
+    height:35.105px;
+    background-image: url("../../../pic/上传文件的加号.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.left .file_please .word_signal_f{
+    position:absolute;
+    top:103.21px;
+    left:116.362px;
+    width: 87.94px;
+    height:21.66px;
+    font-family: 锐字云字库;
+    font-size: 20px;
+    color:#45D8BC;
+}
+
+.container .left .file_please .file_border{
+    width: 100%;
+    height: 100%;
+    background-image: url("../../../pic/上传文件框.png") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-size: 100%;
+}
+
+.container .left .file_please .input_border{
+    position:relative;
+    left:340px;
+    top:-162.5px;
+    font-family: 锐字云字库;
+
+}
+
+.button {
+    font-family: MFYueYuan_Noncommercial-Regular;
+    top:20px;
+    float: left;
+	min-width: 60px;
+	max-width: 180px;
+    height: 30px;
+	background: none;
+	color: inherit;
+	vertical-align: middle;
+    text-align: center;
+	position: relative;
+	z-index: 1;
+	-webkit-backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+    transition: all 0.3s;
+}
+.button:hover{
+    transform: scale(1.3);
+}
+.button:focus {
+	outline: none;
+}
+.button--round-s {
+	border-radius: 5px;
+}
+.button--border-thin {
+	border: 1px solid;
+}
+/* .button--winona {
+	overflow: hidden;
+	padding: 0;
+	-webkit-transition: border-color 0.3s, background-color 0.3s;
+	transition: border-color 0.3s, background-color 0.3s;
+	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+} */
+/* .button--winona::after {
+	content: attr(data-text);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	color: #3f51b5;
+	-webkit-transform: translate3d(0, 25%, 0);
+	transform: translate3d(0, 25%, 0);
+}
+.button--winona > span {
+	display: block;
+} */
+/* .button--winona.button--inverted {
+	color: #7986cb;
+}
+.button--winona.button--inverted:after {
+	color: #fff;
+} */
+/* .button--winona::after,
+.button--winona > span {
+	padding: 1em 2em;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+	transition: transform 0.3s, opacity 0.3s;
+	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+} */
+/* .button--winona:hover {
+	border-color: #3f51b5;
+	background-color: rgba(63, 81, 181, 0.1);
+} */
+/* .button--winona.button--inverted:hover {
+	border-color: #21333C;
+	background-color: #21333C;
+} */
+/* .button--winona:hover::after {
+	opacity: 1;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+.button--winona:hover > span {
+	opacity: 0;
+	-webkit-transform: translate3d(0, -25%, 0);
+	transform: translate3d(0, -25%, 0);
+} */
 
 .container .left .select_color{
     position:absolute;
@@ -83,6 +241,7 @@
     display: flex;
     align-items: center;
     position: relative;
+    font-family: 锐字云字库;
 }
 
 .mui-switch-text_color:before {
@@ -91,6 +250,7 @@
     height: 100%;
     top: 0;
     left: 0;
+    font-family: 锐字云字库;
     position: absolute;
     display: flex;
     align-items: center;
@@ -102,6 +262,7 @@
 
 .mui-switch_color:checked + .mui-switch-text_color:before {
     content: 'Customized';
+    font-family: 锐字云字库;
     left: 50%; 
 }
 
@@ -110,6 +271,7 @@
     width: 50%;
     text-align: center;
     color: #fff;
+    font-family: 锐字云字库;
 }
 
 .right .chart_s {
@@ -118,6 +280,7 @@
     top:26.15px;
     width: 200px;
     height: 40px;
+    font-family: 锐字云字库;
     background-color: #45D8BC;
     border: #45D8BC 1px solid;
 }
@@ -129,10 +292,12 @@
     display: flex;
     align-items: center;
     position: relative;
+    font-family: 锐字云字库;
 }
 
 .mui-switch-text_chart:before {
     content: 'EChart';
+    font-family: 锐字云字库;
     width: 50%;
     height: 100%;
     top: 0;
@@ -148,6 +313,7 @@
 
 .mui-switch_chart:checked + .mui-switch-text_chart:before {
     content: 'D3';
+    font-family: 锐字云字库;
     left: 50%; 
 }
 
@@ -156,18 +322,246 @@
     width: 50%;
     text-align: center;
     color: #fff;
+    font-family: 锐字云字库;
+}
+
+.right .linechart{
+    width: 100%;
+    height:400px;
+    position: absolute;
+    top: 140px;
+
 }
 
 .file_container{
     position: absolute;
-    top: 480px;
+    top: 401.6px;
     left:50px;
-    width: 100px;
-    height:50px;
-    background: url("../../../pic/ChartTemplate/2-BasicAreaChart.png") center center no-repeat !important;
-    background-size: 100%;
-    background-color: transparent;
+    width: 320.67px;
+    height:165.2px;
 }
+
+.color_button{
+    position: absolute;
+    top: 401.6px;
+    left:50px;
+    width: 320.67px;
+    height:165.2px;
+}
+
+.btn1{
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius:50%;
+    background-color: #d16456;
+    border: 1px solid #d5d5d5;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.btn1:hover{
+    transform: scale(1.3);
+}
+
+.btn2{
+    position: absolute;
+    top: 20px;
+    left: 70px;
+    width: 40px;
+    height: 40px;
+    border-radius:50%;
+    background-color: #36689e;
+    border: 1px solid #d5d5d5;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.btn2:hover{
+    transform: scale(1.3);
+}
+
+.btn3{
+    position: absolute;
+    top: 20px;
+    left: 130px;
+    width: 40px;
+    height: 40px;
+    border-radius:50%;
+    background-color: #9745a1;
+    border: 1px solid #d5d5d5;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.btn3:hover{
+    transform: scale(1.3);
+}
+
+.btn4{
+    position: absolute;
+    top: 20px;
+    left: 190px;
+    width: 40px;
+    height: 40px;
+    border-radius:50%;
+    background-color: #d7b24e;
+    border: 1px solid #d5d5d5;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.btn4:hover{
+    transform: scale(1.3);
+}
+
+.btn5{
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    width: 40px;
+    height: 40px;
+    border-radius:50%;
+    background-color: #5ba851;
+    border: 1px solid #d5d5d5;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.btn5:hover{
+    transform: scale(1.3);
+}
+
+.btn6{
+    position: absolute;
+    top: 90px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius:50%;
+    background-color: #efb798;
+    border: 1px solid #d5d5d5;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.btn6:hover{
+    transform: scale(1.3);
+}
+
+.btn7{
+    position: absolute;
+    top: 90px;
+    left: 70px;
+    width: 40px;
+    height: 40px;
+    border-radius:50%;
+    background-color: #e7d192;
+    border: 1px solid #d5d5d5;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.btn7:hover{
+    transform: scale(1.3);
+}
+
+.btn8{
+    position: absolute;
+    top: 90px;
+    left: 130px;
+    width: 40px;
+    height: 40px;
+    border-radius:50%;
+    background-color: #89e0ae;
+    border: 1px solid #d5d5d5;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.btn8:hover{
+    transform: scale(1.3);
+}
+
+.btn9{
+    position: absolute;
+    top: 90px;
+    left: 190px;
+    width: 40px;
+    height: 40px;
+    border-radius:50%;
+    background-color: #7e88d3;
+    border: 1px solid #d5d5d5;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.btn9:hover{
+    transform: scale(1.3);
+}
+
+.btn10{
+    position: absolute;
+    top: 90px;
+    left: 250px;
+    width: 40px;
+    height: 40px;
+    border-radius:50%;
+    background-color: #98d0ef;
+    border: 1px solid #d5d5d5;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.btn10:hover{
+    transform: scale(1.3);
+}
+
+.file_container .pic_border{
+    width: 100%;
+    height: 100%;
+    background-image: url("../../../pic/上传文件框.png") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-size: 100%;
+}
+
+.file_container .pic_border #img3 {
+    max-height: 90%;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 10px 10px;
+    background-size: cover;
+    border-radius: 18px;
+    display: none;
+}
+
+.file_container .add_signal{
+    position:absolute;
+    top: 46.7px;
+    left: 142.786px;
+    width: 35.105px;
+    height:35.105px;
+    background-image: url("../../../pic/上传文件的加号.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.file_container .word_signal{
+    position:absolute;
+    top:103.21px;
+    left:116.362px;
+    width: 87.94px;
+    height:21.66px;
+    font-family: 锐字云字库;
+    font-size: 20px;
+    color:#45D8BC;
+}
+
 
 .file_container .inputbutton{
     position: absolute;
@@ -177,4 +571,8 @@
     right: 0;
     top: 0;
     opacity: 0;
+}
+
+.file_container .canvas_container{
+    display: none;
 }
