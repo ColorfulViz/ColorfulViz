@@ -3,6 +3,15 @@
     font-family: "CloudYuanXiGBK";
     src:url(../../font/锐字云字库细圆体GBK.ttf)
 }
+@font-face{
+    font-family: "YueYuan";
+    src:url(../../font/造字工房悦圆（非商用）常规体.otf)
+}
+
+@font-face{
+    font-family: "AvenirMedium";
+    src:url(../../font/Avenir-Medium.otf)
+}
 
 .content{
     width:100%;
@@ -21,8 +30,6 @@
     text-align: center;
     align-items: center;
 }
-
-
 
 .right{
     position: fixed;
@@ -44,22 +51,40 @@
     background-color: white;
 }
 
+.classTitle{
+    font-family: YueYuan;
+    font-size:24pt ;
+    color: #45D8BC;
+    margin-bottom: 15px;
+}
 
 .linechart{
-    height:400px;
-    width: 1900px;
-    background-color: transparent;
-    overflow-x: scroll;
+    height:200px;
+    width: 1000px;
+    background-color: #f2f2f2;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border-left:8px solid #45D8BC;
+    margin-bottom: 40px;
 }
 
 .linechart .basicline{
-    padding:10px;
-    margin-left:100px;
-    margin-top: 50px;
-    width: 300px;
-    height: 300px;
-    background-color: white;
-    font-size: 18.14pt;
+    /* padding:10px; */
+    margin-bottom:0;
+    margin-top: 0;
+    margin-left: 40px;
+    width: 190px;
+    height: 220px;
+    /* background-color: white;
+    font-size: 18.14pt; */
+}
+
+.chartTitle{
+    margin-top: 20px;
+    font-size: 12pt;
+    font-family: AvenirMedium;
+    margin-bottom: 8px;
+    /* margin-left: 40px; */
 }
 
 .linechart .basicline .blpic{
@@ -67,8 +92,10 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 300px;
-    height: 200px;
+    width: 186px;
+    height: 140px;
+    padding-bottom: 0px;
+    /* margin-left: 40px; */
 }
 
 .basicline .active{
@@ -79,12 +106,12 @@
 .linechart .basicarea{
     padding: 10px;
     position: absolute;
-    top: 50px;
-    left: 450px;
-    width: 300px;
-    height: 300px;
-    background-color: white;
-    font-size: 18.14pt;
+    top: 39.5px;
+    left: 270px;
+    /* background-color: white;
+    font-size: 18.14pt; */
+    width: 190px;
+    height: 220px;
 }
 
 .linechart .basicarea .bapic{
@@ -92,19 +119,19 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 300px;
-    height: 200px;
+    width: 186px;
+    height: 140px;
+    padding-bottom: 0px;
+    /* margin-left: 40px; */
 }
 
 .linechart .stackedline{
     padding: 10px;
     position: absolute;
-    top: 50px;
-    left: 800px;
-    width: 300px;
-    height: 300px;
-    background-color: white;
-    font-size: 18.14pt;
+    top: 39.5px;
+    left: 500px;
+    width: 190px;
+    height: 220px;
 }
 
 .linechart .stackedline .slpic{
@@ -112,19 +139,18 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 300px;
-    height: 200px;
+    width: 186px;
+    height: 140px;
+    padding-bottom: 0px;
 }
 
 .linechart .stackedarea{
     padding: 10px;
     position: absolute;
-    top: 50px;
-    left: 1150px;
-    width: 300px;
-    height: 300px;
-    background-color: white;
-    font-size: 18.14pt;
+    top: 39px;
+    left: 730px;
+    width: 190px;
+    height: 220px;
 }
 
 .linechart .stackedarea .sapic{
@@ -132,8 +158,9 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 300px;
-    height: 200px;
+    idth: 186px;
+    height: 140px;
+    padding-bottom: 0px;
 }
 
 .linechart .smoothedline{
@@ -159,20 +186,21 @@
 
 
 .barchart{
-    height:400px;
-    width: 1900px;
-    background-color: transparent;
-    overflow-x: scroll;
+    height:200px;
+    width: 1000px;
+    background-color: #f2f2f2;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border-left:8px solid #45D8BC;
+    margin-bottom: 40px;
 }
 
 .barchart .barsimple{
-    padding:10px;
-    margin-left:100px;
-    margin-top: 50px;
-    width: 300px;
-    height: 300px;
-    background-color: white;
-    font-size: 18.14pt;
+    margin-bottom:0;
+    margin-top: 0;
+    margin-left: 40px;
+    width: 190px;
+    height: 220px;
 }
 
 .barchart .barsimple .bspic{
@@ -180,19 +208,18 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 300px;
-    height: 200px;
+    width: 186px;
+    height: 140px;
+    padding-bottom: 0px;
 }
 
 .barchart .axisalign{
     padding: 10px;
     position: absolute;
-    top: 450px;
-    left: 450px;
-    width: 300px;
-    height: 300px;
-    background-color: white;
-    font-size: 18.14pt;
+    top: 331.5px;
+    left: 270px;
+    width: 190px;
+    height: 220px;
 }
 
 .barchart .axisalign .aapic{
@@ -200,19 +227,18 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 300px;
-    height: 200px;
+    width: 186px;
+    height: 140px;
+    padding-bottom: 0px;
 }
 
 .barchart .bararea{
     padding: 10px;
     position: absolute;
-    top: 450px;
-    left: 800px;
-    width: 300px;
-    height: 300px;
-    background-color: white;
-    font-size: 18.14pt;
+    top: 331.5px;
+    left: 500px;
+    width: 190px;
+    height: 220px;
 }
 
 .barchart .bararea .bareapic{
@@ -220,19 +246,18 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 300px;
-    height: 200px;
+    width: 186px;
+    height: 140px;
+    padding-bottom: 0px;
 }
 
 .barchart .serieslayout{
     padding: 10px;
     position: absolute;
-    top: 450px;
-    left: 1150px;
-    width: 300px;
-    height: 300px;
-    background-color: white;
-    font-size: 18.14pt;
+    top: 331.5px;
+    left: 730px;
+    width: 190px;
+    height: 220px;
 }
 
 .barchart .serieslayout .seriespic{
@@ -240,18 +265,103 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 300px;
-    height: 200px;
+    width: 186px;
+    height: 140px;
+    padding-bottom: 0px;
 }
 
 .piechart{
-    height:400px;
-    background-color: white;
+    height:200px;
+    width: 1000px;
+    background-color: #f2f2f2;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border-left:8px solid #45D8BC;
+    margin-bottom: 40px;
 }
-.scatterdiagram{
 
-    height:800px;
-    background-color: white;
+.piechart .doughnutChart{
+    margin-bottom:0;
+    margin-top: 0;
+    margin-left: 40px;
+    width: 190px;
+    height: 220px;
+}
+
+.piechart .doughnutChart .doughnutChartpic{
+    background-image:  url(../../pic/ChartTemplate/doughnutChart.png) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 186px;
+    height: 140px;
+    padding-bottom: 0px;
+}
+
+.piechart .nightingare{
+    padding: 10px;
+    position: absolute;
+    top: 623px;
+    left: 270px;
+    width: 190px;
+    height: 220px;
+}
+
+.piechart .nightingare .nightingarepic{
+    background-image:  url(../../pic/ChartTemplate/nightingalesRoseDiagram.png) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 186px;
+    height: 140px;
+    padding-bottom: 0px;
+}
+
+.scatterdiagram{
+    height:200px;
+    width: 1000px;
+    background-color: #f2f2f2;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border-left:8px solid #45D8BC;
+    margin-bottom: 220px;
+}
+
+.scatterdiagram .basicScatter{
+    margin-bottom:0;
+    margin-top: 0;
+    margin-left: 40px;
+    width: 190px;
+    height: 220px;
+}
+
+.scatterdiagram .basicScatter .basicScatterpic{
+    background-image:  url(../../pic/ChartTemplate/basicScatterChart.png) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 186px;
+    height: 140px;
+    padding-bottom: 0px;
+}
+
+.scatterdiagram .Bubble{
+    padding: 10px;
+    position: absolute;
+    top: 914px;
+    left: 270px;
+    width: 190px;
+    height: 220px;
+}
+
+.scatterdiagram .Bubble .bubblepic{
+    background-image:  url(../../pic/ChartTemplate/bubbleChart.png) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 186px;
+    height: 140px;
+    padding-bottom: 0px;
 }
 
 .active{
