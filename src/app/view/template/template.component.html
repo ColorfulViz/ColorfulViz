@@ -1,5 +1,3 @@
-
-
 <div class = 'content'>
     <div class = 'left' >
         <button b = '1' (click)="onClick(1)">折线图</button>
@@ -9,47 +7,69 @@
     </div>
 
     <body class = 'right' (scroll)="doChange()">
+        <div class="classTitle">折线图 Line</div>
         <div class="linechart" a="1" >
             <div [routerLink]="[ '/BasicLine' ]" routerLinkActive="active" class = "basicline">
-                Basic Line Chart
+                <div class="chartTitle">Basic Line Chart</div>
                 <div class = "blpic"></div>
             </div>
             <div [routerLink]="[ '/BasicArea' ]" routerLinkActive="active" class = "basicarea">
-                Basic Area Chart  
+                <div class="chartTitle">Basic Area Chart </div> 
                 <div class = "bapic"></div> 
             </div>
             <div [routerLink]="[ '/StackedLine' ]" routerLinkActive="active" class = "stackedline">
-                Stacked Line Chart
+                <div class="chartTitle">Stacked Line Chart</div>
                 <div class = "slpic"></div>
             </div>
             <div [routerLink]="[ '/StackedArea' ]" routerLinkActive="active" class = "stackedarea">
-                Stacked Area Chart
+                <div class="chartTitle">Stacked Area Chart</div>
                 <div class = "sapic"></div>
             </div>
-            <div [routerLink]="[ '/SmoothedLine' ]" routerLinkActive="active" class = "smoothedline">
-                Smoothed Line Chart
+            <!-- <div [routerLink]="[ '/SmoothedLine' ]" routerLinkActive="active" class = "smoothedline">
+                <div class="chartTitle">Smoothed Line Chart</div>
                 <div class = "smpic"></div>
-            </div>
+            </div> -->
         </div>
-        <div class="barchart" a="2">
+        <div class="classTitle" a="2">柱状图 Bar</div>
+        <div class="barchart" >
             <div [routerLink]="[ '/BarSimple' ]" routerLinkActive="active" class = "barsimple">
-                Bar Simple
+                <div class="chartTitle">Bar Simple</div>
                 <div class = "bspic"></div>
             </div>
             <div [routerLink]="[ '/Axisalign' ]" routerLinkActive="active" class = "axisalign">
-                Axis Align
+                <div class="chartTitle">Axis Align</div>
                 <div class = "aapic"></div>
             </div>
             <div [routerLink]="[ '/BarArea' ]" routerLinkActive="active" class = "bararea">
-                Bar Area
+                <div class="chartTitle">Bar Area</div>
                 <div class = "bareapic"></div>
             </div>
             <div [routerLink]="[ '/SeriesLayout' ]" routerLinkActive="active" class = "serieslayout">
-                Bar Area
+                <div class="chartTitle">Bar Area</div>
                 <div class = "seriespic"></div>
             </div>
         </div>
-        <div class="piechart" a="3"></div>
-        <div class="scatterdiagram" a="4"></div>
+        <div class="classTitle" a="3">饼图 Pie</div>
+        <div class="piechart" >
+            <div class = "doughnutChart">
+                <div class="chartTitle">Doughnut Chart</div>
+                <div class = "doughnutChartpic"></div>
+            </div>
+            <div class = "nightingare">
+                <div class="chartTitle">Nightingales Diagram</div>
+                <div class = "nightingarepic"></div>
+            </div>
+        </div>
+        <div class="classTitle" a="4">散点图 Scatter</div>
+        <div class="scatterdiagram" >
+            <div class = "basicScatter">
+                <div class="chartTitle">Basic Scatter</div>
+                <div class = "basicScatterpic"></div>
+            </div>
+            <div class = "Bubble">
+                <div class="chartTitle">Bubble Chart</div>
+                <div class = "bubblepic"></div>
+            </div>
+        </div>
     </body>
 </div>
