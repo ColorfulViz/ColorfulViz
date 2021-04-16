@@ -59,18 +59,22 @@ export class BasicareaComponent implements OnInit {
   }
 
   ConvertJSONtoArray() {
-    this.data_json = this.data_json.replace(/\\n/g, '\n');
+    this.data_json = this.data_json.replace(/\\r\\n/g, '\n');
 
-    //console.log(this.data_json);
+    console.log(this.data_json);
     this.myDataset = this.data_json.split(/\n/);
-    //console.log(this.myDataset);
+    this.myDataset[this.myDataset.length - 1] = this.myDataset[this.myDataset.length - 1].substring(0,this.myDataset[this.myDataset.length - 1].length - 1);
+    console.log(this.myDataset);
     var i = 0;
     for (; i < this.myDataset.length; i++) {
       //console.log(this.myDataset[i]);
       this.myDataset[i] = this.myDataset[i].split(/,/);
     }
+    if(this.myDataset[i-1].length == 1 && this.myDataset[i-1][0] == ""){
+      this.myDataset.pop();
+    }
     this.myDataset[0][0] = this.myDataset[0][0].substring(1,this.myDataset[0][0].length);
-    //console.log(this.myDataset);
+    console.log(this.myDataset);
   }
 
   ConvertCSVtoJSON() {

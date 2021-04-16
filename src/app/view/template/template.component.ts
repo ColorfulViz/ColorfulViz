@@ -60,7 +60,7 @@ export class TemplateComponent implements OnInit {
     }
 
     if(i != undefined){
-      i = scrollTop + i * 400;
+      i = scrollTop + i * 360;
       console.log('i:'+ i);
       $('.right').animate({scrollTop:i},100)
       $('.right').scrollTop(i);

@@ -273,7 +273,7 @@ function getTopColors(k, imgData) {
         try {
             var main = [];
             cluster.forEach(list => {
-                if (main.length == 5)
+                if (main.length == 7)
                     throw new Error("LoopTerminates");
 
                 if (list) {
@@ -298,7 +298,7 @@ function getTopColors(k, imgData) {
             if (e.message !== "LoopTerminates") throw e;
         };
 
-        while (main.length < 5) {
+        while (main.length < 7) {
             var r0 = main[0].name[0] + Math.round(Math.random() * 20);
             var r1 = main[0].name[1] + Math.round(Math.random() * 20);
             var r2 = main[0].name[2] + Math.round(Math.random() * 20);
